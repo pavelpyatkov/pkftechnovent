@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ПКФ Техновент</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/icon/icon-02-primary.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+
+    h1 {
+      margin-bottom: 1rem;
+      color: #212529;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #212529;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      color: #212529;
+    }
+
+    button[type="submit"] {
+      background-color: #f0ad4e;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #ced4da;
+      color: #212529;
+      line-height: 1.5rem;
+    }
+  </style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt me-2"></small>
+                    <small>+7 923 486 6270</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="far fa-envelope-open me-2"></small>
+                    <small>pfk.technovent42@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <ol class="breadcrumb justify-content-end mb-0">
+                    <li class="breadcrumb-item"><a class="text-white-50 small" href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item"><a class="text-white-50 small" href="Konfident.html">Конфиденциальность</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0"><img class="img-fluid me-3" src="img/icon/icon-02-primary.png" alt="">ПКФ Техновент</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
+                <a href="index.html" class="nav-item nav-link">Главная</a>
+                <a href="about.html" class="nav-item nav-link">О нас</a>
+                <a href="service.html" class="nav-item nav-link">Наши услуги</a>
+                <a href="contact.html" class="nav-item nav-link">Наши контакты</a>
+                <a href="partners.html" class="nav-item nav-link">Наши партнёры</a>
+                <a href="calc.html" class="nav-item nav-link active">Калькулятор</a>
+            </div>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://web.telegram.org" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://vk.com" target="_blank"><i class="fab fa-vk"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Калькулятор</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Калькулятор</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <div style="max-width: 90%; margin: auto" >
+    <h1>Калькулятор мощности кондиционера</h1>
+  <form>
+    <div>
+      <label for="room-area">Площадь помещения (м²):</label>
+      <input type="number" id="room-area" required>
+    </div>
+    <div>
+      <label for="room-height">Высота потолков (м):</label>
+      <input type="number" id="room-height" required>
+    </div>
+    <div>
+      <label for="num-windows">Количество окон:</label>
+      <input type="number" id="num-windows" required>
+    </div>
+    <div>
+      <label for="num-people">Количество людей, постоянно находящихся в помещении:</label>
+      <input type="number" id="num-people" required>
+    </div>
+    <div>
+      <label for="num-devices">Количество приборов, выделяющих тепло (компьютеры, телевизоры и т.д.):</label>
+      <input type="number" id="num-devices" required>
+    </div>
+    <button type="submit">Рассчитать</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const roomArea = Number(document.getElementById('room-area').value);
+      const roomHeight = Number(document.getElementById('room-height').value);
+      const numWindows = Number(document.getElementById('num-windows').value);
+      const numPeople = Number(document.getElementById('num-people').value);
+      const numDevices = Number(document.getElementById('num-devices').value);
+
+      const result = calculatePower(roomArea, roomHeight, numWindows, numPeople, numDevices);
+
+      const recommendedUnits = Math.ceil(result / 2000);
+      const powerPerUnit = result / recommendedUnits;
+
+      const recommendedModels = getRecommendedModels(powerPerUnit);
+
+      let output = `Рекомендуемое количество кондиционеров: ${recommendedUnits} шт.<br>Мощность каждого кондиционера: ${powerPerUnit} Вт<br><br>`;
+      output += 'Рекомендуемые модели кондиционеров:<br>';
+      for (const model of recommendedModels) {
+        output += `- ${model.name} (${model.power} Вт)<br>`;
+      }
+
+      document.getElementById('result').innerHTML = output;
+    });
+
+    function calculatePower(roomArea, roomHeight, numWindows, numPeople, numDevices) {
+      // Базовая мощность на 1 м² площади помещения
+      const basePower = 100;
+
+      // Поправка на высоту потолков
+      const heightFactor = roomHeight / 3;
+
+      // Поправка на количество окон
+      const windowFactor = numWindows * 200;
+
+      // Поправка на количество людей
+      const peopleFactor = numPeople * 100;
+
+      // Поправка на количество приборов, выделяющих тепло
+      const devicesFactor = numDevices * 50;
+
+      // Общая мощность кондиционера
+      const totalPower = basePower * roomArea * heightFactor + windowFactor + peopleFactor + devicesFactor;
+
+      return Math.round(totalPower, 1);
+    }
+
+    function getRecommendedModels(powerPerUnit) {
+      const models = [
+        {
+          name: 'Haier HSU-07HPA03/R2',
+          power: 2000
+        },
+        {
+          name: 'Hisense AS-07HR4SVETG',
+          power: 2000
+        },
+{
+          name: 'LG A07AW1',
+          power: 2100
+        },
+        {
+          name: 'Mitsubishi Electric MSZ-GA25VA',
+          power: 2500
+        },
+        {
+          name: 'Panasonic CS/CU-BE25TKE',
+          power: 2500
+        },
+        {
+          name: 'Daikin FTXB25C/RXB25C',
+          power: 2500
+        },
+        {
+          name: 'Gree GWH09YB-K6DNB1A',
+          power: 2600
+        },
+        {
+          name: 'Ballu BSW-09HN1',
+          power: 2700
+        },
+        {
+          name: 'Electrolux EACS-09HAT/N3',
+          power: 2800
+        },
+        {
+          name: 'Zanussi ZACS-09 H/N1',
+          power: 2900
+        }
+      ];
+
+      const recommendedModels = [];
+
+      for (const model of models) {
+        if (model.power >= powerPerUnit) {
+          recommendedModels.push(model);
+        }
+      }
+
+      return recommendedModels;
+    }
+  </script>
+</script>
+</div>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h1 class="text-white mb-4"><img class="img-fluid me-3" src="img/icon/icon-02-light.png" alt="">Компания</h1>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-light mb-4">Получи оповещение на почту!</h5>
+                    <div class="position-relative">
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Записаться</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Связаться</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Ул. Мирная 10, Кемерово, Россия</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+7 923 486 6270</p>
+                    <p><i class="fa fa-envelope me-3"></i>pfk.technovent42@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Поддержи нас</h5>
+                    <div class="d-flex">
+                        <a class="btn btn-square rounded-circle me-1" href="https://web.telegram.org" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://vk.com" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">ПКФ Техновент</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
